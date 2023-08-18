@@ -12,6 +12,12 @@ html{
 a {
     text-decoration: none;
 }
+.cesar{
+    color: #ffff;
+}
+.cesar:hover{
+    color: rgb(187, 196, 204);
+}
 /* MENU */
 .contenedor-header{
     background: #1e2326;
