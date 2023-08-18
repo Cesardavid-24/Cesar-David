@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/terminal-solid.svg" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Cesar David</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <!-- MENU ENCABEZADO -->
+    <div class="contenedor-header">
+        <header>
+            <div class="logo">
+                <a href="#">Cesar</a>
+            </div>
+            <nav id="nav">
+                <ul>
+                    <li><a href="#inicio" onclick="seleccionar()">Inicio</a></li>
+                    <li><a href="#sobremi" onclick="seleccionar()">Sobre Mi</a></li>
+                    <li><a href="#skills" onclick="seleccionar()">Habilidades</a></li>
+                    <li><a href="#curriculum" onclick="seleccionar()">Curriculum</a></li>
+                    <li><a href="#contacto" onclick="seleccionar()">Contacto</a></li>
+                </ul>
+            </nav>
+            <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </header>
+    </div>
+
+    <!-- SECCION INICIO -->
+    <section id="inicio" class="inicio">
+        <div class="contenido-banner">
+            <div class="contenedor-img">
+                <img loading="lazy" src="img/cesar.jpeg" alt="">
+            </div>
+            <h1>Cesar David</h1>
+            <h2>Desarrollador Web - Backend</h2>
+            <div class="redes">
+                <a href="https://www.facebook.com/cesardavidr"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="https://www.instagram.com/rojasnorscia/"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.linkedin.com/in/césar-david-rojas-norscia-a357a1224/"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="https://github.com/Cesardavid-24"><i class="fa-brands fa-github"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION SOBRE MI -->
+    <section id="sobremi" class="sobremi">
+        <div class="contenido-seccion">
+            <h2>Sobre Mí</h2>
+            <p><span>Hola, soy Cesar.</span> Estudiante y Programador Freelance hace 2 años. Autodidacta, Dedicado a la enseñanza de forma online.</p>
+
+            <div class="fila">
+                <!-- datos personales -->
+                <div class="col">
+                    <h3>Datos Personales</h3>
+                    <ul>
+                        <li>
+                            <strong>Cumpleaños</strong>
+                            30-09-1995
+                        </li>
+                        <li>
+                            <strong>Teléfono</strong>
+                            +58-4145754791
+                        </li>
+                        <li>
+                            <strong>Email</strong>
+                            Norsciacesar@gmail.com
+                        </li>
+                        <li>
+                            <strong>Website</strong>
+                            www.example.com
+                        </li>
+                        <li>
+                            <strong>Dirección</strong>
+                            Barquisimeto, Lara - Venezuela
+                        </li>
+                        <li>
+                            <strong>Cargo</strong>
+                            <span>Frelance</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- intereses -->
+                <div class="col">
+                    <h3>Intereses</h3>
+                    <div class="contenedor-intereses">
+                        <div class="interes">
+                            <i class="fa-solid fa-gamepad"></i>
+                            <span>JUEGOS</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-headphones"></i>
+                            <span>MUSICA</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-plane"></i>
+                            <span>VIAJAR</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-brands fa-apple"></i>
+                            <span>MAC OS</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-person-hiking"></i>
+                            <span>DEPORTE</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-book"></i>
+                            <span>LIBROS</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-car"></i>
+                            <span>AUTOS</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-camera"></i>
+                            <span>FOTOS</span>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+            <a href="cv/CV César Rojas.pdf" download="#curriculumCesar">
+                <button>
+                    Descargar CV <i class="fa-solid fa-download"></i>
+                    <span class="overlay"></span>
+                </button>
+            </a>
+        </div>
+    </section>
+
+    <!-- SECCION SKILLS -->
+    <section class="skills" id="skills">
+        <div class="contenido-seccion">
+            <h2>Habilidades</h2>
+            <div class="fila">
+                <!-- Technical Skill -->
+                <div class="col">
+                    <h3>Tecnicas</h3>
+                    <div class="skill">
+                        <span>Javascript & Node JS</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>70%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Python</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>65%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>React Js</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>40%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Wordpress</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>50%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Professional Skills -->
+                <div class="col">
+                    <h3>Profesional</h3>
+                    <div class="skill">
+                        <span>Comunicación</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>80%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Trabajo en Equipo</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>85%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Creatividad</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>70%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Dedicación</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>90%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION CURRICULUM -->
+    <section id="curriculum" class="curriculum">
+        <div class="contenido-seccion">
+            <h2>Curriculum</h2>
+            <div class="fila">
+                <div class="col izquierda">
+                    <h3>Educación</h3>
+                    <div class="item izq">
+                        <h4>Ing. Sistemas</h4>
+                        <span class="casa">Universidad de la Fuerza Armada</span>
+                        <span class="fecha">2021 - Actual</span>
+                        <p>5to Semestre en Curso Ing Sistemas</p>
+                        <div class="conectori">
+                            <div class="circulo"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <h4>Lic. Matematicas</h4>
+                        <span class="casa">Universidad Centro Occidental Lisandro Alvarado</span>
+                        <span class="fecha">2021 - Actual</span>
+                        <p>3er Semestre en Curso Lic. Matematicas</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <h4>CCNA - Cisco</h4>
+                        <span class="casa">Academia Cisco NetWorking</span>
+                        <span class="fecha">2023</span>
+                        <p>2 Modulo en Curso En Redes de Telecomunicacion</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col derecha">
+                    <h3>Experiencia de trabajo</h3>
+                    <div class="item der">
+                        <h4>Programador Backend</h4>
+                        <span class="casa">Freelance</span>
+                        <span class="fecha">2021 - Actual</span>
+                        <p>Trabajos para Clientes Online a Medida</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div> 
+                    <div class="item der">
+                        <h4>Desarrollador Web</h4>
+                        <span class="casa">Freelance</span>
+                        <span class="fecha">2021 - Actual</span>
+                        <p>Trabajos para Clientes Online a Medida Usando Wordpress , Woocommerce
+                            Elementor Pro, Crocoblock.
+                        </p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div> 
+                    <div class="item der">
+                        <h4>Programador Nivel Hardware</h4>
+                        <span class="casa">Freelance</span>
+                        <span class="fecha">2021 - Actual</span>
+                        <p>Trabajos para Estudiantes Universitarios, Proyectos , Etc.</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div> 
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION CONTACTO -->
+    <section id="contacto" class="contacto">
+        <div class="contenido-seccion">
+            <h2>CONTACTO</h2>
+            <div class="fila">
+                <!-- Formulario -->
+                <div class="col">
+                   <form action="https://formsubmit.co/norsciacesar@gmail.com" method="POST">
+                        <button type="submit" disabled hidden aria-hidden="true"></button>
+                        <label for="nombre">Nombre</label>
+                        <input type="text" name="nombre" placeholder="Tú Nombre">
+
+                        <label for="telefono">Celular</label>
+                        <input type="text" name="telefono" placeholder="Número telefónico">
+
+                        <label for="correo">Correo</label>
+                        <input type="text" name="correo" placeholder="Dirección de correo">
+
+                        <label for="tema">Solicitud</label>
+                        <input type="text" name="tema" placeholder="Solicitud">
+
+                        <label for="descripcion">Descripcion</label>
+                        <textarea name="descripcion" id="" cols="30" rows="10" placeholder="Descripcion"></textarea>
+                    
+                        <a href="https://wa.link/lrlu6u">
+                            <button>
+                                Enviar Mensaje <i class="fa-brands fa-whatsapp"></i>
+                                <span class="overlay"></span>
+                            </button>   
+                            <button type="submit">
+                                Enviar Formulario <i class="fa-solid fa-envelope"></i>
+                                <span class="overlay"></span>
+                            </button>         
+                        </a>
+                        <input type="hidden" name="_next" value="http://localhost:5500">
+                        <input type="hidden" name="_captcha" value="false">
+                   </form>
+                </div>
+                <!-- Mapa -->
+                <div class="col">
+                    <img loading="lazy" src="img/ubicacion.png" alt="">
+                    <div class="info">
+                        <ul>
+                            <li>
+                                <i class="fa-solid fa-location-dot"></i>
+                               Barquisimeto - Lara Venezuela
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-mobile-screen"></i>
+                                Llamanos: +58 - 4145754791 
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-envelope"></i>
+                                Email: Norsciacesar@gmail.com
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer -->
+    <footer>
+        <a href="#inicio" class="arriba">
+            <i class="fa-solid fa-angles-up"></i>
+        </a>
+        <div class="redes">
+            <a href="https://www.facebook.com/cesardavidr"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="https://www.instagram.com/rojasnorscia/"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://www.linkedin.com/in/césar-david-rojas-norscia-a357a1224/"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="https://github.com/Cesardavid-24"><i class="fa-brands fa-github"></i></a>
+        </div>
+    </footer>
+
+    <script defer src="script.js"></script>
+</body>
+</html>
